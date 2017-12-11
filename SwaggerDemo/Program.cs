@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Microsoft.AspNetCore;
+using Microsoft.AspNetCore.Hosting;
+using System;
 
 namespace SwaggerDemo
 {
@@ -6,7 +8,11 @@ namespace SwaggerDemo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
+            WebHost.CreateDefaultBuilder()
+                .UseStartup<Startup>().UseUrls("http://localhost:5000")
+                .Build()
+                .Run();
         }
     }
 }

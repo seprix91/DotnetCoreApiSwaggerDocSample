@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SwaggerDemo</name>
+    </assembly>
+    <members>
+        <member name="T:SwaggerDemo.HomeController">
+            <summary>
+            SwaggerDemo controller
+            </summary>
+        </member>
+        <member name="M:SwaggerDemo.HomeController.Index">
+            <summary>
+            returns today's date
+            </summary>
+            <returns>string message</returns>
+        </member>
+        <member name="M:SwaggerDemo.HomeController.WhatDayisit(System.DateTime)">
+            <summary>
+            returns day string for given date
+            </summary>
+            <param name="date"></param>
+            <returns>day of week string</returns>
+        </member>
+        <member name="M:SwaggerDemo.HomeController.CreateDate(System.String)">
+            <summary>
+            create a new date item
+            </summary>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
